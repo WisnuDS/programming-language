@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:scrollbars="none"
+    android:layout_margin="@dimen/margin_horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            tools:src="@android:color/darker_gray"
+            android:id="@+id/detil_photo"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_horizontal"/>
+        <TextView
+            android:id="@+id/tv_name_detil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama Bahasa"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="center"
+            android:layout_marginTop="@dimen/margin_horizontal"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/tv_descripsion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Descripsi"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="@dimen/margin_horizontal"/>
+        <Button style="@style/Widget.AppCompat.Button.Colored"
+            android:id="@+id/btn_referensi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/referensi_belajar"/>
+    </LinearLayout>
+
+</ScrollView>
